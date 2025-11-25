@@ -1,12 +1,12 @@
-# 🐍 Python OOP: Encapsulation with Private Members
+#  Python OOP: Encapsulation with Private Members
 
-## 🎯 AIM
+##  AIM
 
 To implement **Encapsulation** in Python by defining a class `Rectangle` with **private member variables** `__length` and `__breadth`.
 
 ---
 
-## 🧠 ALGORITHM
+##  ALGORITHM
 
 1. **Define the Class**:
    - Create a class `Rectangle` with two private attributes: `__length` and `__breadth`.
@@ -22,8 +22,30 @@ To implement **Encapsulation** in Python by defining a class `Rectangle` with **
 
 ---
 
-## 💻 Program
+##  Program
+
+```
+class Rectangle:
+    def __init__(self, length, width):
+        self.__length = length  # Private variable
+        self.__width = width    # Private variable
+    
+    # Method to print private variables
+    def print_values(self):
+        print(self.__length)
+        print(self.__width)
+
+# Create an object of Rectangle class
+rect = Rectangle(5, 3)
+
+# Print private values using the method within the class
+rect.print_values()
+
+# Attempt to print private values outside the class (will raise an AttributeError)
+```
 
 ## Output
+<img width="1172" height="274" alt="image" src="https://github.com/user-attachments/assets/70755131-3107-4aaa-b526-d3d69cf2dbd9" />
 
 ## Result
+Thus, the program is executed successfully
